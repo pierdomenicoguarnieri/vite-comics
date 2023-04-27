@@ -4,7 +4,8 @@ export default {
   name: "Header",
   data(){
     return{
-      menuTop
+      menuTop,
+      counter: 0
     }
   }
 }
@@ -19,7 +20,7 @@ export default {
       <div class="right">
         <nav>
           <ul>
-            <li v-for="(link, index) in menuTop" :key="index"><a :href="link.href" :class="{active : link.isActive}" @click="link.isActive = !link.isActive">{{link.text}}</a></li>
+            <li v-for="(link, index) in menuTop" :key="index"><a :href="link.href" :class="{active : counter == index}" @click="counter = index">{{link.text}}</a></li>
           </ul>
         </nav>
       </div>

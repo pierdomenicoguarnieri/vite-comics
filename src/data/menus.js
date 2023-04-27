@@ -1,8 +1,7 @@
 const menuTop = [
   {
     text: "characters",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "comics",
@@ -11,43 +10,35 @@ const menuTop = [
   },
   {
     text: "movies",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "tv",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "games",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "collectibles",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "videos",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "fans",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "news",
-    href: "#",
-    isActive: false
+    href: "#"
   },
   {
     text: "shop",
-    href: "#",
-    isActive: false
+    href: "#"
   }
 ];
 

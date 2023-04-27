@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.14",
     "sass": "^1.62.1",
     "vue": "^3.2.47"
   },

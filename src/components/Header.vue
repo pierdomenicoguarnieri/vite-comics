@@ -47,7 +47,6 @@ export default {
         display: inline-block;
         a{
           margin: 0 15px;
-          text-decoration: none;
           color: $grey;
           font-weight: $bold;
           padding-bottom: 35px;

@@ -1,6 +1,12 @@
 <script>
+import {menuTop} from "../data/menus.js";
 export default {
-  name: "Header"
+  name: "Header",
+  data(){
+    return{
+      menuTop
+    }
+  }
 }
 </script>
 
@@ -13,7 +19,7 @@ export default {
       <div class="right">
         <nav>
           <ul>
-            <li><a href="">Link</a></li>
+            <li v-for="(link, index) in menuTop" :key="index"><a :href="link.href" :class="{active : link.isActive}" @click="link.isActive = !link.isActive">{{link.text}}</a></li>
           </ul>
         </nav>
       </div>
@@ -45,10 +51,16 @@ export default {
           color: $grey;
           font-weight: $bold;
           padding-bottom: 35px;
-          border-bottom: 3px solid transparent;
+          border-bottom: 5px solid transparent;
+          text-transform: uppercase;
+          font-size: $s-text;
           &:hover{
             transition: all .3s;
-            border-bottom: 3px solid $blue;
+            border-bottom: 5px solid $blue;
+            color: $blue;
+          }
+          &.active{
+            border-bottom: 5px solid $blue;
             color: $blue;
           }
         }

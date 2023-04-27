@@ -134,6 +134,7 @@ export default {
     padding: 30px 0;
     @include displayFlex("both");
     .left{
+      @include displayFlex("vertical");
       span{
         padding: 10px 10px;
         border: 2px solid $blue;
@@ -142,23 +143,25 @@ export default {
       }
     }
     .right{
-      @include displayFlex("none");
+      @include displayFlex("vertical");
       span{
         color: $blue;
         font-size: $xl-text;
         text-transform: uppercase;
         font-weight: $bold;
       }
-      ul{
-        margin-left: 25px;
-        li{
-          display: inline-block;
-          &:not(:last-child){
+      nav{
+        @include displayFlex("vertical");
+        height: 100%;
+        ul{
+          margin-left: 25px;
+        @include displayFlex("none");
+          li:not(:last-child){
             margin-right: 15px;
-          }
-          a:hover{
-            transition: all .3s;
-            filter: brightness(60%);
+            a:hover{
+              transition: all .3s;
+              filter: brightness(60%);
+            }
           }
         }
       }

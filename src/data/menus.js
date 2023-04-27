@@ -51,4 +51,27 @@ const menuTop = [
   }
 ];
 
-export {menuTop}
+const menuCta = [
+  {
+    img: "./src/assets/img/buy-comics-digital-comics.png",
+    text: "digital comics"
+  },
+  {
+    img: "./src/assets/img/buy-comics-merchandise.png",
+    text: "dc merchandise"
+  },
+  {
+    img: "./src/assets/img/buy-comics-subscriptions.png",
+    text: "subcriptions"
+  },
+  {
+    img: "./src/assets/img/buy-comics-shop-locator.png",
+    text: "comic shop locator"
+  },
+  {
+    img: "./src/assets/img/buy-dc-power-visa.svg",
+    text: "dc power visa"
+  }
+];
+
+export {menuTop, menuCta}

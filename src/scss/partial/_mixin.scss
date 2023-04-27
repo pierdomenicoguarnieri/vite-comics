@@ -15,5 +15,7 @@
     align-items: center;
   }@else if $type == "between"{
     justify-content: space-between;
+  }@else if $type == "evenly"{
+    justify-content: space-evenly;
   }
 }

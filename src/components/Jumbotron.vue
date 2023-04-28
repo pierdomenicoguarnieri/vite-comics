@@ -14,8 +14,5 @@ export default {
   .jumbotron{
     height: 400px;
     overflow: hidden;
-    img{
-      display: block;
-    }
   }
 </style>

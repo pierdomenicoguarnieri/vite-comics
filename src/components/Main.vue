@@ -1,10 +1,12 @@
 <script>
 import Cta from "./partials/Cta.vue";
+import Card from "./partials/Card.vue";
 
 export default {
   name: "Main",
   components: {
-    Cta
+    Cta,
+    Card
   }
 }
 </script>
@@ -13,7 +15,10 @@ export default {
   <main>
     <div class="content">
       <div class="container">
-        <h1>-- Content goes here --</h1>
+        <span>Current series</span>
+        <div class="card-container">
+          <Card/>
+        </div>
       </div>
     </div>
   </main>
@@ -26,10 +31,27 @@ export default {
   
   .container{
     @include container;
+    position: relative;
+    .card-container{
+      width: 100%;
+      @include displayFlex(none);
+      flex-wrap: wrap;
+    }
   }
   .content{
     background-color: $black;
     color: white;
     padding: 50px 0;
+    span{
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      transform: translate(0, -40%);
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: $extra-bold;
+      font-size: $xl-text;
+      background-color: $blue;
+    }
   }
 </style>

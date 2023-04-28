@@ -1,12 +1,18 @@
 <script>
 import Cta from "./partials/Cta.vue";
 import Card from "./partials/Card.vue";
+import cardJson from "../data/json/dc-comics.json";
 
 export default {
   name: "Main",
   components: {
     Cta,
     Card
+  },
+  data(){
+    return{
+      cardJson,
+    }
   }
 }
 </script>
@@ -17,7 +23,7 @@ export default {
       <div class="container">
         <span>Current series</span>
         <div class="card-container">
-          <Card/>
+          <Card v-for="(element, index) in cardJson" :key="index" :img="element.thumb" :title="element.series"/>
         </div>
       </div>
     </div>

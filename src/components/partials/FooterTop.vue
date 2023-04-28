@@ -6,6 +6,12 @@ export default {
     return{
       menuFooter
     }
+  },
+  methods:{
+    getImage(img){
+      console.log(img);
+      return new URL(img, import.meta.url).href;
+    }
   }
 }
 </script>
@@ -68,7 +74,7 @@ export default {
     @include displayFlex("between");
   }
   .top{
-    background-image: url("./src/assets/img/footer-bg.jpg");
+    background-image: url("../../assets/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 370px;
@@ -102,7 +108,7 @@ export default {
     }
     .right{
       width: 50%;
-      background-image: url("./src/assets/img/dc-logo-bg.png");
+      background-image: url("../../assets/img/dc-logo-bg.png");
       background-repeat: no-repeat;
       background-position: center;
     }

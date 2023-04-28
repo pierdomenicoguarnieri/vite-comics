@@ -7,6 +7,12 @@ export default {
     return{
       menuCta
     }
+  },
+  methods:{
+    getImage(img){
+      console.log(img);
+      return new URL(img, import.meta.url).href;
+    }
   }
 }
 </script>
@@ -15,7 +21,7 @@ export default {
   <div class="cta">
       <div class="container">
         <div class="element" v-for="(element, index) in menuCta" :key="index">
-          <img :src="element.img" :alt="element.text">
+          <img :src="getImage(`../../assets/img/${element.img}`)" :alt="element.text">
           <span>{{element.text}}</span>
         </div>
       </div>

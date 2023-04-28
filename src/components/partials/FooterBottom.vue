@@ -6,6 +6,12 @@ export default {
     return{
       menuSocial
     }
+  },
+  methods:{
+    getImage(img){
+      console.log(img);
+      return new URL(img, import.meta.url).href;
+    }
   }
 }
 </script>
@@ -21,7 +27,7 @@ export default {
         <nav>
           <ul>
             <li v-for="(icon, index) in menuSocial" :key="index">
-              <a :href="icon.href"><img :src="icon.img" alt=""></a>
+              <a :href="icon.href"><img :src="getImage(`../../assets/img/${icon.img}`)" alt=""></a>
             </li>
           </ul>
         </nav>
@@ -61,8 +67,8 @@ export default {
         font-weight: $bold;
       }
       nav{
-        @include displayFlex("vertical");
         height: 100%;
+        @include displayFlex("vertical");
         ul{
           margin-left: 25px;
         @include displayFlex("none");

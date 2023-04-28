@@ -43,23 +43,23 @@ const menuTop = [
 
 const menuCta = [
   {
-    img: "./src/assets/img/buy-comics-digital-comics.png",
+    img: "buy-comics-digital-comics.png",
     text: "digital comics"
   },
   {
-    img: "./src/assets/img/buy-comics-merchandise.png",
+    img: "buy-comics-merchandise.png",
     text: "dc merchandise"
   },
   {
-    img: "./src/assets/img/buy-comics-subscriptions.png",
+    img: "buy-comics-subscriptions.png",
     text: "subcriptions"
   },
   {
-    img: "./src/assets/img/buy-comics-shop-locator.png",
+    img: "buy-comics-shop-locator.png",
     text: "comic shop locator"
   },
   {
-    img: "./src/assets/img/buy-dc-power-visa.svg",
+    img: "buy-dc-power-visa.svg",
     text: "dc power visa"
   }
 ];
@@ -177,23 +177,23 @@ const menuFooter = {
 
 const menuSocial = [
   {
-    img: "../src/assets/img/footer-facebook.png",
+    img: "footer-facebook.png",
     href: "#"
   },
   {
-    img: "../src/assets/img/footer-twitter.png",
+    img: "footer-twitter.png",
     href: "#"
   },
   {
-    img: "../src/assets/img/footer-youtube.png",
+    img: "footer-youtube.png",
     href: "#"
   },
   {
-    img: "../src/assets/img/footer-pinterest.png",
+    img: "footer-pinterest.png",
     href: "#"
   },
   {
-    img: "../src/assets/img/footer-periscope.png",
+    img: "footer-periscope.png",
     href: "#"
   }
 ]

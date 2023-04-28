@@ -5,8 +5,7 @@ const menuTop = [
   },
   {
     text: "comics",
-    href: "#",
-    isActive: true
+    href: "#"
   },
   {
     text: "movies",

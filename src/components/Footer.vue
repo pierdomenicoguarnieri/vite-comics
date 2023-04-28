@@ -67,12 +67,12 @@ export default {
         <div class="right">
           <span>Follow us</span>
           <nav>
-              <ul>
-                <li v-for="(icon, index) in menuSocial" :key="index">
-                  <a :href="icon.href"><img :src="icon.img" alt=""></a>
-                </li>
-              </ul>
-            </nav>
+            <ul>
+              <li v-for="(icon, index) in menuSocial" :key="index">
+                <a :href="icon.href"><img :src="icon.img" alt=""></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

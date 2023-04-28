@@ -158,10 +158,10 @@ export default {
         @include displayFlex("none");
           li:not(:last-child){
             margin-right: 15px;
-            a:hover{
-              transition: all .3s;
-              filter: brightness(60%);
-            }
+          }
+          a:hover{
+            transition: all .3s;
+            filter: brightness(60%);
           }
         }
       }

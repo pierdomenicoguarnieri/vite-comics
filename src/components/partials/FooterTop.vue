@@ -66,13 +66,12 @@ export default {
   .container{
     @include container;
     @include displayFlex("between");
-    height: 100%;
   }
   .top{
     background-image: url("./src/assets/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 370px;
+    min-height: 370px;
     overflow: hidden;
     h4{
       color: $white;
@@ -103,7 +102,6 @@ export default {
     }
     .right{
       width: 50%;
-      height: 100%;
       background-image: url("./src/assets/img/dc-logo-bg.png");
       background-repeat: no-repeat;
       background-position: center;

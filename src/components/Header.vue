@@ -50,7 +50,7 @@ export default {
           margin: 0 15px;
           color: $grey;
           font-weight: $bold;
-          padding-bottom: 35px;
+          padding-bottom: 34px;
           border-bottom: 5px solid transparent;
           text-transform: uppercase;
           font-size: $s-text;

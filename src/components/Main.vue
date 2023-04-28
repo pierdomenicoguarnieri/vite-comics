@@ -25,6 +25,7 @@ export default {
         <div class="card-container">
           <Card v-for="(element, index) in cardJson" :key="index" :img="element.thumb" :title="element.series"/>
         </div>
+        <button type="button">Load More</button>
       </div>
     </div>
   </main>
@@ -37,11 +38,28 @@ export default {
   
   .container{
     @include container;
+    flex-direction: column;
     position: relative;
+    text-align: center;
     .card-container{
       width: 100%;
       @include displayFlex(none);
       flex-wrap: wrap;
+      text-align: start;
+    }
+    button{
+      padding: 10px 40px;
+      border: 2px solid transparent;
+      background-color: $blue;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: $bold;
+      cursor: pointer;
+      &:hover{
+        transition: all .3s;
+        background-color: transparent;
+        border: 2px solid $blue;
+      }
     }
   }
   .content{
